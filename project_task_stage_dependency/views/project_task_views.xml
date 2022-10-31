@@ -13,4 +13,16 @@
         </field>
     </record>
 
+    <record id="task_type_tree_inherit" model="ir.ui.view">
+        <field name="name">project.task.type.tree.inherit</field>
+        <field name="model">project.task.type</field>
+        <field name="inherit_id" ref="project.task_type_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='fold']" position="after">
+                <field name="previous_stage_ids" domain="[('id', '!=', id)]" widget="many2many_tags" optional="show"/>
+                <field name="next_stage_ids" domain="[('id', '!=', id)]" widget="many2many_tags" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
 </odoo>
