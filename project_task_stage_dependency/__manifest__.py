@@ -4,7 +4,7 @@
     'website': 'https://github.com/ruiznorlan/project',
     'category': 'Services/Project',
     'sequence': 45,
-    'summary': 'This module allows to restrict the next stage of a task',
+    'summary': 'This module allows to restrict the next/previous stage of a task, in this way a workflow can be carried out correctly without skipping stages.',
     'depends': [
         'base',
         'project'

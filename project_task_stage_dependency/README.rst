@@ -11,7 +11,7 @@ PROJECT STAGE DEPENDENCY
   :alt: Module Icon
   :align: right
 
-This module allows to restrict the next stage of a task
+This module allows to restrict the next/previous stage of a task, in this way a workflow can be carried out correctly without skipping stages.
 
 
 Author
